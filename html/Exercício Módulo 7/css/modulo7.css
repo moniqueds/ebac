@@ -1,0 +1,35 @@
+/*
+
+	Herança
+	
+	1. Sobreposição
+
+*/
+
+html {
+	font-family: monospace;
+}
+
+article {
+	color: #363861;
+}
+
+ul {
+	color: black !important;
+}
+
+nav {
+	color: black;
+	font: Times New Roman;
+}
+
+header p {
+	color: #fff 
+	font-size: 1.5rem;
+	font: VT323;
+
+}
+
+
+
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light Store - VueLamp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <img src="./images/menu.png" alt="menu" class="menu=img" />
+        <img src="./images/logo.png" alt="menu" class="logo" />
+        <ul>
+          <li><a href="index.html"> Home Page </a></li>
+          <li><a href="collections.html"> Collections </a></li>
+          <li><a href="contact.html"> Contact </a></li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn">
+          <span> </span>
+        </button>
+      </nav>
+
+      <style>
+
+        *{margin:0;padding:0;box-sizing: border-box;}
+        
+        form {
+            max-width: 500px;
+            width: 70%;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%)
+        }
+    
+        form h2{
+            text-align: center;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+        form input[type=email]{
+            width: 100%;
+            height: 45px;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 10px 0;
+            }    
+
+            form input[type=telefone]{
+            width: 100%;
+            height: 45px;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 10px 0;
+            }    
+
+        form input[type=mensagem]{
+            width: 100%;
+            height: 100px;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 10px 0;
+            }    
+
+        form input[type=submit]{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #00986f;
+            color: #e7e0d6;
+            border: 0;
+            border-radius: 20px;
+            transition: 1s;
+        }
+
+        form input[type=submit]:hover{
+            background-color: #00986f;
+        }
+
+        form input[type=email]:focus{
+            outline:0;
+        }
+
+        form input[type=telefone]:focus{
+            outline:0;
+        }
+
+        form input[type=mensagem]:focus{
+            outline:0;
+        }
+        
+    </style>
+
+    <body>
+
+    <form>
+        <h2> Entrar em Contato </h2>
+        <input id="email" type="email" name="email" placeholder="Seu e-mail..."/>
+        <input id="telefone" type="telefone" name="telefone" placeholder="Seu Telefone..."/>
+        <input id="mensagem" type="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui"/>
+        <input type="submit" name="acao" placeholder="Enviar..."/>
+    </form>
+
+    <script>
+        var email = document.getElementById('email');
+        var mensagem = document.getElementById('mensagem');
+        var telefone = document.getElementById('telefone');
+
+        email.addEventListener('focus',()=>{
+        email.style.borderColor = "#4A5F6A"
+        });
+
+        email.addEventListener('blur',()=>{
+        email.style.borderColor = "#ccc"
+        });
+
+        mensagem.addEventListener('focus',()=>{
+        mensagem.style.borderColor = "#4A5F6A"
+        });
+
+        mensagem.addEventListener('blur',()=>{
+        mensagem.style.borderColor = "#ccc"
+        });
+
+        telefone.addEventListener('focus',()=>{
+        telefone.style.borderColor = "#4A5F6A"
+        });
+
+        telefone.addEventListener('blur',()=>{
+        telefone.style.borderColor = "#ccc"
+        });
+
+
+
+    </script>
+
+    </body>
+  
+</html>
+
+
+</body>
+</html>

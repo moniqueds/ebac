@@ -1,0 +1,53 @@
+/* Importando CSS de Tabelas */
+@import 'tabelas.css'
+
+
+/*	Herança
+		1. Sobreposição
+*/
+
+html {
+	font-family: monospace;
+}
+
+
+ul {
+	color: black !important;
+	padding: 2px;
+}
+
+nav {
+	color: black;
+	font: serif;
+	line-height: 18px;
+	font-size: 1.5rem;
+}
+
+nav h3 {
+		line-height: 45px;
+		font-size: 2.0rem
+}
+
+header p {
+	color: #FFFFFF; 
+	font-size: 1.5rem;
+	font: VT323;
+
+}
+
+footer {
+	letter-spacing: 0.5rem;
+
+}
+
+div {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+div h3 {
+	margin-bottom: 15px;
+}
+
+
+
